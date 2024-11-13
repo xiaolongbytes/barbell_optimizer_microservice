@@ -17,7 +17,7 @@ results = response.json()
 
 # Print results to confirm they match what was promised
 # Also demonstrates how to access the results
-print(results['lbs'])
-print(results['kgs'])
-print(results['funUnits'])
-print(results['funUnits']['corgis'])
+print('Results in Pounds:',results['lbs'])
+print('Results in Kilograms',results['kgs'])
+print('Total Weight in Fun Units', results['funUnits'])
+print('Total Weight in Corgis',results['funUnits']['corgis'])

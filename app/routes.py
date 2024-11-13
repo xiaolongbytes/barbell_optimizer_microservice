@@ -1,7 +1,7 @@
 from app import app
 from flask import request, jsonify
 
-@app.route('/api/plates', methods=['GET','POST'])
+@app.route('/api/plates', methods=['POST'])
 def data() -> dict:
     """Gets JSON Payload and returns plate optimizations in lbs and kgs and fun units"""
     results = {}
