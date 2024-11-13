@@ -3,8 +3,8 @@ For Oregon State University's CS 361 Software Engineering I class
 
 Given a JSON payload containing totalWeight, barWeight, and plateOptions, returns a JSON object containing the plates required per side in pounds. It also returns the information in units of kilograms and also returns the equivalent weight of the totalWeight in various fun units (corgis, cats, kegs, gold bars).
 
-# General user notes on how to run Flask locally:
-Note: assumes Mac. For Windows/Powershell, most of the instructions can be found [here](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
+# General Flask User Notes:
+Assumes Mac. For Windows/Powershell, most of the instructions can be found [here](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
 1. Install python
 2. (First time only)   
 Create a virtual environment  
@@ -33,7 +33,7 @@ Install Flask (make sure you're in venv!)
 
 # Communication Contract
 ## Instructions how to REQUEST data
-1. Run the provided Flask application (see the app folder) locally (see General User Notes above). This listens for incoming requests on the microservice endpoint (/api/plates).
+1. Run the provided Flask application (see the app folder) locally (see General Flask User Notes above). This listens for incoming requests on the microservice endpoint (/api/plates).
 2. Make a HTTP POST request to the endpoint (see Example Call below) with the JSON payload. Be sure to pass in the correct url and data.
 
 See Example Call for the JSON payload structure this microservice expects.
@@ -76,3 +76,6 @@ print(results['kgs'])
 print(results['funUnits'])
 print(results['funUnits']['corgis'])
 ```
+
+# UML Diagram
+![alt text](image-2.png)
